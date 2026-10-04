@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="El rincón de 1.º: juegos, lectura y desafíos para aprender practicando.">
+  <title>El rincón de 1.º | INNOVA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="El rincón de 1.º, inicio">
+      <span class="brand-mark" aria-hidden="true">✦</span>
+      <span><strong>EL RINCÓN DE 1.º</strong><small>INNOVA · APRENDEMOS JUGANDO</small></span>
+    </a>
+    <span class="header-note">UN LUGAR PARA DESCUBRIR ✨</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">¡HOLA, EXPLORADORES!</p>
+        <h1>Un poquito de práctica,<br><span>un montón de descubrimientos.</span></h1>
+        <p class="hero-text">Elegí un desafío, jugá, leé y seguí aprendiendo. ¡Este rincón crece con nuevas propuestas!</p>
+        <a class="hero-button" href="#actividades">EXPLORAR ACTIVIDADES <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="sun"></div><div class="spark spark-one">✦</div><div class="spark spark-two">✧</div>
+        <div class="book book-back"></div><div class="book book-front"><span>¡A<br>JUGAR!</span></div>
+        <div class="pencil">✎</div><div class="bubble">¡VOS<br>PODÉS!</div>
+      </div>
+    </section>
+
+    <section class="quick-links" aria-label="Áreas">
+      <a class="area-tile tile-pdl" href="#actividades" data-jump="Prácticas del Lenguaje"><span class="tile-icon">Aa</span><span><strong>MUNDO DE PALABRAS</strong><small>Leer, escribir y jugar</small></span><span class="tile-arrow">↗</span></a>
+      <a class="area-tile tile-math" href="#actividades" data-jump="Matemática"><span class="tile-icon">123</span><span><strong>MUNDO MATEMÁTICO</strong><small>Contar, pensar y resolver</small></span><span class="tile-arrow">↗</span></a>
+      <a class="area-tile tile-lit" href="#actividades" data-jump="Literatura"><span class="tile-icon">📚</span><span><strong>RINCÓN LITERARIO</strong><small>Cuentos para imaginar</small></span><span class="tile-arrow">↗</span></a>
+    </section>
+
+    <section class="weekly" id="semanal">
+      <div class="weekly-badge">⭐</div>
+      <div><p class="eyebrow">PARA EMPEZAR</p><h2>Desafíos para esta semana</h2><p>Encontrá las propuestas que tu seño seleccionó para seguir practicando.</p></div>
+      <a href="#actividades" class="text-link">VER DESAFÍOS <span>→</span></a>
+    </section>
+
+    <section class="activities-section" id="actividades">
+      <div class="section-heading">
+        <div><p class="eyebrow">TU PRÓXIMA AVENTURA</p><h2>¿Qué vamos a practicar hoy?</h2><p class="section-subtitle">Elegí un área o buscá una actividad por su nombre.</p></div>
+        <span class="activity-count" id="activityCount">CARGANDO…</span>
+      </div>
+      <div class="filters">
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Buscar una actividad…" aria-label="Buscar una actividad"></label>
+        <div class="filter-buttons" role="group" aria-label="Filtrar por área">
+          <button class="filter-button active" data-filter="Todas">Todas</button>
+          <button class="filter-button" data-filter="Prácticas del Lenguaje">Palabras</button>
+          <button class="filter-button" data-filter="Matemática">Matemática</button>
+          <button class="filter-button" data-filter="Literatura">Literatura</button>
+        </div>
+      </div>
+      <div id="statusMessage" class="status-message" role="status">Estamos preparando las actividades…</div>
+      <div class="activity-grid" id="activityGrid"></div>
+      <div id="emptyState" class="empty-state" hidden><span>🔎</span><h3>No encontramos esa actividad</h3><p>Probá con otra palabra o elegí un área diferente.</p></div>
+    </section>
+
+    <section class="teacher-note">
+      <span class="teacher-star">✦</span><div><h2>¡Cada intento cuenta!</h2><p>No hace falta que todo salga a la primera. Probá, pensá y volvé a intentarlo.</p></div>
+      <span class="teacher-doodle" aria-hidden="true">☺</span>
+    </section>
+  </main>
+
+  <footer><span class="footer-brand">EL RINCÓN DE 1.º</span><span>Hecho para aprender, jugar y crecer 💚</span><a href="#top" id="backToTop">VOLVER ARRIBA ↑</a></footer>
+  <script src="app.js"></script>
+</body>
+</html>
