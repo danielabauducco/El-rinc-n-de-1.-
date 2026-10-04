@@ -65,7 +65,7 @@ function createCard(item) {
   const desc = document.createElement("p"); desc.textContent = item.descripcion || item.contenido || "¡Entrá y descubrí esta actividad!";
   const footer = document.createElement("div"); footer.className = "card-footer";
   const tag = document.createElement("span"); tag.className = "tag"; tag.textContent = item.contenido || "¡A practicar!";
-  const link = document.createElement("a"); link.className = "open-activity"; link.textContent = "IR A JUGAR ↗";
+  const link = document.createElement("a"); link.className = "open-activity"; link.textContent = item.area === "Literatura" ? "¡A LEER! ↗" : "IR A JUGAR ↗";
   link.href = safeUrl(item.enlace) || "#";
   link.target = "_blank"; link.rel = "noopener noreferrer";
   if (!safeUrl(item.enlace)) { link.removeAttribute("target"); link.textContent = "ENLACE PENDIENTE"; link.setAttribute("aria-disabled","true"); link.style.opacity=".65"; }
