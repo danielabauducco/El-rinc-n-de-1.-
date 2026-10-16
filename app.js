@@ -14,7 +14,7 @@ const colors = {
   "Prácticas del Lenguaje": ["#25866e","#e8f5ed","🔤"],
   "Matemática": ["#ee9638","#fff0dc","🔢"],
   "Literatura": ["#70bad8","#e7f6fb","📚"],
-  "Desafíos semanales": ["#8b83cf","#f0effc","⭐"]
+  "Juegos de clase": ["#8b83cf","#f0effc","🎮"]
 };
 let allActivities = [];
 let currentFilter = "Todas";
@@ -48,7 +48,7 @@ function safeUrl(value) {
   } catch { return ""; }
 }
 function createCard(item) {
-  const palette = colors[item.area] || colors["Desafíos semanales"];
+  const palette = colors[item.area] || ["#25866e","#eaf7ef","🎯"];
   const card = document.createElement("article");
   card.className = "activity-card";
   card.style.setProperty("--card-color", palette[0]);
